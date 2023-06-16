@@ -1,0 +1,181 @@
+.searchUserSection {
+    position: fixed;
+    width: 30%;
+    @media screen and (max-width: 768px) {
+        position: unset;
+        width: auto;
+    }
+}
+.UserManagement {
+    height: 84vh;
+    overflow: overlay;
+    // padding: 0 1rem;
+    padding: 0 1rem 0 0.6rem;
+    .userManageCard {
+        color: rgba(0, 0, 0, 0.87);
+        // transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+        border: 0px solid rgba(0, 0, 0, 0.125);
+        border-radius: 1rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-shadow: rgb(255 255 255 / 90%) 0rem 0rem 0.0625rem 0.0625rem inset,
+            rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+        padding: 0.9rem;
+        align-items: center;
+        display: flex;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253)) !important;
+        }
+
+        .userIcon {
+            transition: all 200ms ease-in-out 0s;
+            width: auto;
+            img {
+                text-align: center;
+                object-fit: cover;
+                border-radius: 0.75rem;
+                background: transparent;
+                font-weight: 700;
+                // box-shadow: rgb(0 0 0 / 12%) 0rem 0.3125rem 0.625rem 0rem;
+                width: 5rem;
+                height: 5rem;
+                // margin-right: 1.5rem;
+                // width: 82%;
+                // height: 82%;
+            }
+        }
+        .userBlink {
+            background: #fff;
+            min-width: 1.3rem;
+            min-height: 1.3rem;
+            border-radius: 50%;
+            display: inline-grid;
+            place-items: center;
+            cursor: pointer;
+            position: absolute;
+            top: 4.6rem;
+            left: 4.6rem;
+            .blinkSection {
+                line-height: 0;
+                .blinkCircle,
+                .blinkCircle1 {
+                    padding: 0px 6px;
+                    border-radius: 50%;
+                    line-height: 0;
+                    font-size: 11px;
+                }
+                .blinkCircle1 {
+                    background: red;
+                }
+                .blinkCircle {
+                    background: green;
+                }
+            }
+        }
+        .userInfo {
+            max-height: 7.8vh;
+            margin-left: 1.7rem;
+            .flName {
+                font-size: 1.1rem;
+                // font-family: Roboto, Helvetica, Arial, sans-serif;
+                opacity: 1;
+                line-height: 1;
+                color: rgb(52, 71, 103);
+                font-weight: bold;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+            .username {
+                font-size: 0.9rem;
+                font-weight: bold;
+                opacity: 1;
+                color: rgb(29 90 7);
+            }
+            .cardcaption {
+                color: rgb(33, 82, 255);
+            }
+            span,
+            h6 {
+                // font-family: Roboto, Helvetica, Arial, sans-serif;
+                font-size: 0.875rem;
+                letter-spacing: 0.02857em;
+                opacity: 1;
+                color: rgb(60, 68, 83);
+                font-weight: bold;
+            }
+        }
+        // .btnSection {
+        //     display: flex;
+        //     justify-content: end;
+        //     width: 100%;
+        //     position: absolute;
+        //     right: 1rem;
+        //     top: 1rem;
+        //     .btn {
+        //         padding: 4px 13px;
+        //         background: #218838;
+        //         border-radius: 0.5rem;
+        //         box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem,
+        //             rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+        //         border-color: #1e7e34;
+        //         font-size: 0.9rem;
+        //         font-weight: bold;
+        //         color: #fff;
+        //     }
+        // }
+    }
+}
+.createBtn {
+    display: flex;
+    justify-content: end;
+    @media screen and (max-width: 768px) {
+        margin-top: 1rem;
+    }
+    .usercreateBtn {
+        width: 13rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-decoration: none;
+        @media screen and (max-width: 768px) {
+            // width: 45%;
+            margin-bottom: 1rem;
+        }
+    }
+}
+.searchField {
+    margin-bottom: 0.7rem;
+    position: relative;
+    padding: 0 1rem 0 0.6rem;
+
+    .searchBox {
+        border-radius: 0.5rem;
+        border: 1px solid #67748e;
+        padding: 0.5rem;
+        width: 100%;
+        background: transparent;
+    }
+    .searchIcon {
+        position: absolute;
+        right: 28px;
+        top: 8px;
+    }
+}
+.mainHeadingSection {
+    display: flex;
+    justify-content: space-between;
+    .username {
+        padding: 1.5rem;
+        opacity: 1;
+        background: transparent;
+        font-size: 1.2rem;
+        color: #218838;
+        font-weight: bold;
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
+            padding-left: 0;
+        }
+    }
+}

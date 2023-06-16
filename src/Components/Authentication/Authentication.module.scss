@@ -1,0 +1,207 @@
+.authentication {
+    width: 100vw;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 0rem !important;
+        // width: 100%;
+    }
+    .Loginpage {
+        align-items: center;
+        .loginFormSection {
+            // height: calc(100vh - 7rem);
+            height: calc(100vh - 15vh);
+            @media screen and (max-width: 768px) {
+                // height: calc(100vh - 9rem);
+                height: calc(100vh - 20vh);
+            }
+            .logo {
+                position: relative;
+                bottom: 3rem;
+                @media screen and (max-width: 768px) {
+                    position: unset;
+                }
+                .responsiveimg {
+                    width: 11rem;
+                    @media screen and (max-width: 768px) {
+                        padding-bottom: 2rem;
+                        padding-top: 1rem;
+                    }
+                }
+            }
+        }
+
+        .registerCard {
+            margin-left: 4rem !important;
+            @media screen and (max-width: 768px) {
+                margin-left: 0 !important;
+            }
+        }
+        .LoginCard {
+            border-radius: 0.5rem;
+            box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem,
+                rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+            padding: 2rem;
+            z-index: 1;
+            background: rgb(255, 255, 255);
+            width: 30vw;
+            margin: auto;
+            @media screen and (max-width: 768px) {
+                margin-left: 0;
+                width: unset;
+                // margin: unset;
+                margin-bottom: 1rem;
+            }
+
+            .hey {
+                position: relative;
+                bottom: 0;
+                top: 3rem;
+                @media screen and (max-width: 768px) {
+                    top: 2rem;
+                }
+            }
+            .avatar {
+                height: 6rem;
+                width: 6rem;
+                @media screen and(max-width: 768px) {
+                    height: 4rem;
+                    width: 4rem;
+                }
+            }
+            form {
+                margin-top: 2rem;
+                input {
+                    // width: 75%;
+                    &:focus {
+                        box-shadow: 0 0 0 0.1rem rgb(13 110 253 / 25%) !important;
+                    }
+                }
+                .labelIcon {
+                    vertical-align: inherit;
+                }
+
+                .passwordSection {
+                    position: relative;
+                    .adminPassHideShow {
+                        position: absolute;
+                        right: 0.7rem;
+                        bottom: 0.5rem;
+                        .eyeIcon {
+                            cursor: pointer;
+                            // color: #0d6efd;
+                        }
+                    }
+                }
+                .customBtn {
+                    .sigleCustomBtn {
+                        width: 100%;
+                        padding: 9px;
+                        border-radius: 0.5rem;
+                        box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem,
+                            rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+                        border: none;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        color: #fff;
+                        margin: 5px 0;
+                        @media screen and (max-width: 768px) {
+                            padding: 7px;
+                        }
+                        &:first-child {
+                            // margin-right: 3rem;
+                            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+                        }
+                        &:nth-child(2) {
+                            background: linear-gradient(310deg, rgb(234, 6, 6), rgb(255, 102, 124));
+                        }
+                    }
+                }
+                .userReg {
+                    margin-top: 2rem;
+                }
+                a {
+                    vertical-align: text-top;
+                    line-height: 0;
+                }
+            }
+        }
+        
+        .rocketBackgroung {
+            width: calc(100% - 7rem) !important;
+            height: calc(100vh - 7rem) !important;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        .chatBackground {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 1%);
+            height: calc(100vh - 4vh);
+            position: relative;
+            text-align: center;
+            margin: 15px 16px 16px 0;
+            opacity: 1;
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+            color: rgb(52, 71, 103);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+            .backimg {
+                width: 120rem;
+                position: absolute;
+                left: 0px;
+                opacity: 0.4;
+                background: transparent;
+                color: rgb(52, 71, 103);
+            }
+            .backimg2 {
+                width: 100%;
+                max-width: 50%;
+                opacity: 1;
+                background: transparent;
+                color: rgb(52, 71, 103);
+            }
+            .backcontent {
+                margin-top: 48px;
+                margin-bottom: 8px;
+                opacity: 1;
+                background: transparent;
+                color: rgb(52, 71, 103);
+                .content {
+                    margin: 0px;
+                    font-size: 1.5rem;
+                    line-height: 1.375;
+                    letter-spacing: 0.00735em;
+                    opacity: 1;
+                    text-transform: none;
+                    vertical-align: unset;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    font-weight: 700;
+                }
+            }
+            .backPContent {
+                margin-bottom: 8px;
+                opacity: 1;
+                background: transparent;
+                color: rgb(52, 71, 103);
+                p {
+                    margin: 0px;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.6;
+                    letter-spacing: 0.01071em;
+                    opacity: 1;
+                    text-transform: none;
+                    vertical-align: unset;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}

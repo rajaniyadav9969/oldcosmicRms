@@ -1,0 +1,89 @@
+.dashboard-tab {
+    // padding-left: 1rem;
+    .dropdown-toggle {
+        padding: 0;
+    }
+    .dropdown-toggle::after {
+        display: block;
+        border: none;
+    }
+    .img-1 {
+        text-align: center;
+    }
+    .avatar-img {
+        border-radius: 60%;
+        height: 32px;
+        width: 32px;
+        object-fit: cover;
+        padding: 3px;
+        background-color: #2a2e39;
+    }
+    // .dropdown-menu.show {
+    //     // transform: translate(0.125rem, -50%);
+    //     transition: transform 2s ease-out ;
+    // }
+    .dropdown-menu {
+        padding: 0;
+        background: unset;
+        margin-top: 0;
+        border: none;
+        // transition: all 2s  ease-in;
+        // transform: translate(0.125rem, -50%);
+        // transition: transform 250ms ease-in-out 0s;
+
+        @media screen and (max-width: 768px) {
+            position: absolute;
+        }
+        .dropdown-item {
+            padding: 0;
+            &:focus,
+            &:hover {
+                background-color: unset;
+            }
+        }
+    }
+}
+.notification-count {
+    .MuiBadge-badge {
+        right: auto;
+        top: auto;
+        bottom: 1px;
+        background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+        color: #fff;
+    }
+}
+.trade-beta-version {
+    .beta-version-content {
+        animation: notificationblink 2s linear infinite;
+        color: #2174ff;
+        font-weight: bold;
+        font-size: 0.97rem;
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+// .notification-blinking {
+//     padding: 0 4px;
+//     border-radius: 50%;
+//     line-height: 0;
+//     font-size: 8px;
+//     animation: notificationblink 1s linear infinite;
+//     position: relative;
+//     left: 1.9rem;
+//     background: red;
+//     height: 9px;
+//     z-index: 2;
+//     top: 1rem;
+// }
+@keyframes notificationblink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

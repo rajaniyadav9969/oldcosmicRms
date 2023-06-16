@@ -1,0 +1,194 @@
+.maindetails {
+    // display: flex;
+    width: 100vw;
+    @media screen and (max-width: 768px) {
+        width: unset;
+    }
+    .singleDetails {
+        box-sizing: border-box;
+        width: 30.98%;
+        margin: 0.6rem;
+        padding: 10px;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.625;
+        letter-spacing: 0.00938em;
+        transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        overflow-wrap: break-word;
+        background-color: rgb(255, 255, 255);
+        background-clip: border-box;
+        border: 0px solid rgba(0, 0, 0, 0.125);
+        border-radius: 1rem;
+        box-shadow: rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+        height: 100%;
+        color: rgb(52, 71, 103);
+
+        @media screen and(max-width: 768px) {
+            width: 93%;
+            margin-left: 0.9rem;
+        }
+        .minimize {
+            display: none;
+        }
+        .details {
+            .details-container {
+                .graph {
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    padding-right: 4px;
+                    margin-bottom: 1.5rem;
+                    height: auto;
+                    background: linear-gradient(310deg, rgb(20, 23, 39), rgb(58, 65, 111));
+                    border-radius: 0.75rem;
+                }
+                .data-board {
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    opacity: 1;
+                    background: transparent;
+                    box-sizing: border-box;
+                    .title {
+                        margin-bottom: 16px;
+                        opacity: 1;
+                        background: transparent;
+                        .details-content {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .title-users {
+                                margin: 0px;
+                                font-size: 1rem;
+                                line-height: 1.625;
+                                letter-spacing: 0.0075em;
+                                opacity: 1;
+                                text-transform: capitalize;
+                                vertical-align: unset;
+                                text-decoration: none;
+                                font-weight: bold;
+                                padding: 0px;
+                            }
+                        }
+                        .symbol-position {
+                            padding-top: 0.4rem;
+                            align-items: center;
+                            color: rgb(103, 116, 142);
+                            .user-desc {
+                                font-size: 0.875rem;
+                                letter-spacing: 0.02857em;
+                                opacity: 1;
+                                text-transform: none;
+                                vertical-align: unset;
+                                text-decoration: none;
+                                font-weight: bold;
+                            }
+                            .symbol-position-2 {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+                        }
+                    }
+                    .data-grid {
+                        box-sizing: border-box;
+                        margin-top: -16px;
+                        margin-left: -16px;
+                        padding: 16px;
+                        .users,
+                        .clicks,
+                        .sales,
+                        .items {
+                            opacity: 1;
+                            background: transparent;
+                            padding: 0;
+                            @media screen and (max-width: 768px) {
+                                margin-bottom: 0.4rem;
+                            }
+                            .title-container {
+                                display: flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                                opacity: 1;
+                                background: transparent;
+                                color: rgb(103, 116, 142);
+                                .icon {
+                                    width: 1.25rem;
+                                    height: 1.25rem;
+                                    font-size: 0.75rem;
+                                    display: flex;
+                                    -webkit-box-pack: center;
+                                    justify-content: center;
+                                    -webkit-box-align: center;
+                                    align-items: center;
+                                    margin-right: 8px;
+                                    opacity: 1;
+                                    color: rgb(255, 255, 255);
+                                    border-radius: 0.25rem;
+                                    box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem,
+                                        rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+                                }
+                                .span-tag {
+                                    margin: 0px;
+                                    font-size: 0.75rem;
+                                    line-height: 1.25;
+                                    letter-spacing: 0.03333em;
+                                    opacity: 1;
+                                    text-transform: capitalize;
+                                    vertical-align: unset;
+                                    text-decoration: none;
+                                    font-weight: 500;
+                                }
+                            }
+                            .amount-container {
+                                margin-top: 8px;
+                                opacity: 1;
+                                background: transparent;
+                                @media screen and (max-width: 768px) {
+                                    margin-top: 0.2rem;
+                                }
+                                .h4-tag {
+                                    margin: 0px;
+                                    font-size: 1.3rem;
+                                    line-height: 1.375;
+                                    letter-spacing: 0.00735em;
+                                    opacity: 1;
+                                    text-transform: none;
+                                    vertical-align: unset;
+                                    text-decoration: none;
+                                    font-weight: 700;
+                                    @media screen and (max-width: 768px) {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                                .bar {
+                                    width: 75%;
+                                    margin-top: 4px;
+                                    opacity: 1;
+                                    background: transparent;
+                                }
+                            }
+                        }
+                        .users {
+                            .icon {
+                                background: linear-gradient(310deg, rgb(6 122 1), rgb(45 255 128));
+                            }
+                        }
+                        .clicks {
+                            .icon {
+                                background: linear-gradient(310deg, rgb(234, 6, 6), rgb(255, 102, 124));
+                            }
+                        }
+                        .sales {
+                            .icon {
+                                background: linear-gradient(310deg, rgb(245, 57, 57), rgb(251, 207, 51));
+                            }
+                        }
+                        .items {
+                            .icon {
+                                background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,531 @@
+.dark-mode {
+    background-color: #131722 !important;
+    color: #fff !important;
+    // .custom-table {
+    //     background: #1c2030;
+    //     color: #fff;
+    // }
+    animation: 0.7s circle reverse;
+    @keyframes circle {
+        0% {
+            clip-path: circle(100%);
+        }
+        100% {
+            clip-path: circle(10% at 100% 2%);
+        }
+    }
+
+    .tableDivSection {
+        background-color: #1c2030 !important;
+    }
+    .filter {
+        .select-hideshow {
+            .form-control-alternative,
+            .items {
+                background: #1c2030 !important;
+                color: #fff;
+            }
+        }
+        .grouping {
+            .multiSelectContainer {
+                .searchWrapper,
+                .optionContainer {
+                    background: #131722;
+                    ::placeholder {
+                        color: #fff;
+                    }
+                }
+                .optionListContainer {
+                    .optionContainer {
+                        li {
+                            &:hover {
+                                background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253)) !important;
+                            }
+                        }
+                        .highlightOption {
+                            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253)) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ReactTable {
+        // border: 1px solid rgb(255 255 255);
+        // padding-bottom: 5px;
+        .rt-table {
+            .rt-th,
+            .rt-td {
+                color: #fff;
+                input {
+                    color: #fff;
+                    &:focus-visible {
+                        border: 1px solid #fff;
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .rt-thead.-filters {
+            input {
+                border: 1px solid rgb(236 236 236);
+                color: #fff;
+            }
+        }
+
+        .pagination-bottom {
+            .-pagination {
+                height: 31px;
+                .-previous,
+                .-next,
+                .-pageInfo,
+                select {
+                    background: #131722;
+                    color: #fff;
+                    option {
+                        background: #131722;
+                        color: #fff;
+                    }
+                    .-btn {
+                        color: #fff;
+                    }
+                }
+                .-pageJump {
+                    input {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .rt-expander {
+            &:after {
+                border-top: 7px solid rgba(256, 256, 256, 0.8);
+            }
+        }
+        .rt-tfoot,
+        .rt-thead.-header {
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253)) !important;
+        }
+    }
+    // }
+
+    //header
+    .mainheader {
+        .mainnavbar {
+            background: #1c2030;
+            color: #fff;
+            .closemenu,
+            .openmenu,
+            .singleItem {
+                background: rgb(39 44 65) !important;
+                color: #fff !important;
+                @media screen and (max-width: 768px) {
+                    background: unset !important;
+                }
+            }
+            .cosmicTrades {
+                .cosmic-trade-content {
+                    h1 {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .sidebar-bottom-Section {
+            .indicatorContent,
+            .indicator-name {
+                color: #fff;
+            }
+        }
+        .pro-sidebar-inner {
+            background-color: #1c2030;
+            .pro-sidebar-layout {
+                #header {
+                    .menuicon,
+                    .user-section,
+                    .screen-dark-light {
+                        color: #fff;
+                    }
+                }
+                .navmenu {
+                    ul {
+                        .singleitem {
+                            .navlinks,
+                            .singleitem {
+                                color: #fff;
+                                &:hover {
+                                    background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253)) !important;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .profile-side {
+                    .fade {
+                        .toast-header {
+                            color: #ffffff;
+                            background-color: #93979d;
+                            // border-bottom: 1px solid #fff;
+                        }
+                        .toast-body {
+                            background-color: rgb(28 32 48);
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+        .pro-sidebar {
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    //setting
+    .setting-maintabs,
+    .basic-forminfo,
+    .session-section {
+        background: #1c2030;
+        color: #fff !important;
+        .setting-single-tabs {
+            &:hover {
+                background: #080e15;
+            }
+        }
+        .date-section {
+            .MuiInputBase-root {
+                color: #fff !important;
+                &::before {
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+    .MuiPickersCalendar-week {
+        .MuiPickersDay-day {
+            color: #fff;
+        }
+        .MuiPickersDay-dayDisabled {
+            color: #949191 !important;
+        }
+    }
+    .MuiPickersBasePicker-container {
+        .MuiPickersCalendarHeader-daysHeader {
+            .MuiPickersCalendarHeader-dayLabel {
+                color: #949191 !important;
+            }
+        }
+        .MuiButtonBase-root {
+            background: transparent;
+            color: #fff;
+            &:hover {
+                background: #949191;
+            }
+        }
+        .Mui-disabled {
+            color: #949191 !important;
+        }
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        opacity: 1;
+        filter: invert(0.8);
+        color: #fff;
+    }
+
+    //profilePage.scss
+    .label-icon {
+        color: #fff !important;
+    }
+    .dropdown-menu {
+        background: #131722;
+        .dropdown-item,
+        .dropdown-csvBtn {
+            color: #fff;
+        }
+        .dropdown-item:hover {
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+        }
+    }
+
+    //session
+    .session-section {
+        .session-card {
+            color: #fff;
+            .session-card-item {
+                .session-card-icon {
+                    span {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    //chatBoxMainPage
+    .group-filter,
+    .singleCard,
+    .mtm-graph,
+    .singleDetails,
+    .chat-single-card,
+    .dashboard-parity-details,
+    .apexcharts-legend-text {
+        background: #1c2030 !important;
+        color: #fff !important;
+    }
+    .chat-time-stamp {
+        color: #ffffff85 !important;
+    }
+    // .close-query-btn {
+    //     color: #fff !important;
+    // }
+    .fade {
+        .modal-dialog {
+            .modal-content {
+                background: #1c2030;
+                .btn-close {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    //DailyMTMGraph
+    .apexcharts-tooltip.apexcharts-theme-light,
+    .apexcharts-tooltip-title {
+        background: rgb(19 23 34) !important;
+    }
+    .apexcharts-text {
+        fill: #fff !important;
+    }
+
+    .mtm-ananltsis-form-group {
+        .mtm-analysis-form-select {
+            color: #fff;
+            background-color: #1c2030 ;
+        }
+    }
+
+    //Details
+    .maindetails {
+        .singleDetails {
+            .details {
+                .details-container {
+                    .data-board {
+                        .symbol-position,
+                        .title-container {
+                            color: #fff !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .MuiPaper-rounded {
+        background: #1c2030 !important;
+        color: #fff !important;
+        .active-page-section {
+            color: #fff;
+        }
+    }
+    .css-qfso29-MuiTypography-root-MuiDialogContentText-root {
+        color: #fff;
+    }
+
+    //notificationPage
+    .notification-page-section {
+        background: #1c2030;
+        // .notification-card {
+        //     background: #131722;
+        //     color: #fff;
+        //     &:hover {
+        //         background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253)) !important;
+        //         color: #fff !important;
+        //     }
+        // }
+        // .notification-form-message {
+        //     color: rgb(33 212 253) !important;
+        // }
+    }
+    .form-control,
+    .form-select {
+        background: transparent;
+        color: #fff;
+    }
+    .input-group {
+        input {
+            background: transparent;
+            color: #fff !important;
+        }
+        div:nth-child(2) {
+            background: #1c2030 !important;
+            color: #fff;
+            border: 1px solid rgb(157 156 156 / 49%);
+            h6 {
+                background: #1c2030 !important;
+            }
+        }
+        .invalid-feedback {
+            background: transparent !important;
+            color: #dc3545 !important;
+            border: none !important;
+        }
+    }
+    option {
+        background: #1c2030;
+        color: #fff;
+        // &:hover {
+        //     background: red;
+        // }
+    }
+    //Notification
+    .poup-notification {
+        .popup-notification-message {
+            color: #fff;
+        }
+    }
+
+    //BottomNavbar
+    .bottomnavbar {
+        .subFooter {
+            background: #1c2030;
+            color: #fff;
+            .singleFooterItem {
+                .footerItemLink {
+                    color: #fff;
+                }
+                .footerItemLink.active {
+                    background: rgb(39, 44, 65) !important;
+                }
+            }
+        }
+    }
+
+    //ContextMenu
+
+    .context-menu-popup {
+        background: #131722;
+        color: #fff;
+        button {
+            color: #fff;
+        }
+    }
+
+    //iNotifyBtn
+    .popover {
+        background: #1c2030;
+        color: #fff;
+        border: 1px solid #fff;
+        .popover-header {
+            background: #131722;
+            border-bottom: 1px solid #fff;
+        }
+        .popover-body {
+            color: #fff;
+        }
+    }
+
+    //UserManagement
+    .usermanagement-search-field {
+        .usermanagement-search-box {
+            background: transparent;
+            color: #fff;
+        }
+    }
+
+    .usermanagement-section {
+        .usermanagement-card {
+            background: #1c2030;
+            box-shadow: none;
+            .user-activate-blink {
+                background: #1c2030;
+            }
+            .usermanagement-user-info {
+                h5,
+                span,
+                h6 {
+                    color: #fff;
+                }
+                .user-card-caption {
+                    color: green;
+                }
+            }
+        }
+    }
+    .optionListContainer {
+        background: #1c2030;
+    }
+
+    //register,
+    .register-section {
+        background: #1c2030 !important;
+        color: #fff;
+    }
+
+    //DraggableFloation
+    .draggable-parity {
+        .MuiSpeedDial-actions {
+            .MuiFab-root {
+                background: rgb(28, 32, 48);
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .Floating-btn {
+            .MuiSpeedDial-root {
+                .MuiSpeedDial-actions {
+                    background: #1c2030;
+                }
+                .MuiSpeedDial-actionsClosed {
+                    background: none;
+                }
+            }
+        }
+    }
+
+    //ExposureCard
+    .exposureCard {
+        // background: #1c2030;
+        .exposureTableHeading {
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253)) !important;
+        }
+    }
+
+    //parity
+    .parity-section,
+    .apexcharts-menu {
+        background: #1c2030;
+        .parity-data-lable {
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253)) !important;
+        }
+        option {
+            color: #fff !important;
+        }
+        .parity-value {
+            // background: #a8acb1 !important;
+            color: #fff;
+            input {
+                color: #fff;
+                border-bottom: 1px dotted #3c3c3c !important;
+            }
+            .parity-value-data {
+                div:nth-child(2) {
+                    background: #1c2030 !important;
+                    h6 {
+                        background: #1c2030 !important;
+                        &:hover {
+                            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253)) !important;
+                        }
+                    }
+                }
+            }
+        }
+        .parity-buy-sell {
+            color: #fff !important;
+        }
+    }
+}

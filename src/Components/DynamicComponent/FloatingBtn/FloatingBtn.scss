@@ -1,0 +1,82 @@
+.Floating-btn {
+    .MuiSpeedDial-actions {
+        padding-left: 38px !important;
+    }
+    .MuiSpeedDial-root {
+        .MuiFab-root {
+            width: 5rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                width: 3.3rem;
+                height: 2.5rem;
+            }
+        }
+        .MuiSpeedDial-actions {
+            @media screen and (max-width: 768px) {
+                margin-left: 0.5rem !important;
+                padding-left: 0.7rem !important;
+                background: #f4f9fe;
+                border-radius: 0.5rem;
+                width: 78vw;
+                padding: 3px;
+                // height: 3.4rem;
+                height: 2.7rem;
+                // margin-left: 0.5rem !important;
+                // padding-left: 0 !important;
+                // background: #f4f9fe;
+                // border-radius: 0.5rem;
+                // width: 80vw;
+            }
+        }
+        .MuiSpeedDial-actionsClosed {
+            @media screen and (max-width: 768px) {
+                background: none;
+            }
+        }
+        .MuiFab-label {
+            font-size: 1rem;
+        }
+        .MuiSpeedDial-actions {
+            .MuiFab-label {
+                font-size: 1.3rem;
+            }
+        }
+        .MuiFab-primary {
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+        }
+    }
+    .muidial-direction {
+        @media screen and (max-width: 768px) {
+            position: absolute;
+            // top: -1.47rem;
+            top: -1.62rem;
+        }
+    }
+
+    .MuiSpeedDialAction-fab.MuiButtonBase-root {
+        border-radius: 50% !important;
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+        @media screen and (max-width: 768px) {
+            width: 2.2rem !important;
+            height: 2.2rem !important;
+            margin: 0 8px 0 0;
+        }
+    }
+    .floatingbtn-section {
+        margin-bottom: 0;
+        display: flex;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+        span {
+            font-weight: bold;
+            padding-left: 0.4rem;
+            @media screen and (max-width: 768px) {
+                padding-left: 0;
+            }
+        }
+    }
+}

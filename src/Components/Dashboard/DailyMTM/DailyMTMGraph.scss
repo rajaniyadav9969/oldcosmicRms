@@ -1,0 +1,97 @@
+.overview-chart {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 4rem;
+        // position:static;
+    }
+    .overview-graph {
+        margin-bottom: 1rem;
+        height: auto !important;
+    }
+}
+.mtm-graph {
+    margin-left: 0;
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    width: auto;
+    overflow-wrap: break-word;
+    background-color: rgb(255, 255, 255);
+    background-clip: border-box;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    border-radius: 1rem;
+    box-shadow: rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+    color: rgb(52, 71, 103);
+    position: relative;
+    margin-right: 0.5rem;
+    @media screen and (max-width: 768px) {
+        margin: 0.7rem 0.1rem 1.3rem 0.1rem;
+    }
+
+    .graph-container {
+        opacity: 1;
+        background: transparent;
+        padding: 1rem;
+        .title {
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 8px;
+            opacity: 1;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            // @media screen and (max-width:768px) {
+            //     padding-right: 2px;
+            //     padding-left: 0px;
+            // }
+            .h6_title {
+                margin: 0px;
+                font-size: 1rem;
+                line-height: 1.625;
+                letter-spacing: 0.0075em;
+                opacity: 1;
+                font-weight: bold;
+            }
+            .mtm-grap-window-btn {
+                // display: block;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+        .graph {
+            opacity: 1;
+            background: transparent;
+        }
+        @media screen and (max-width: 768px) {
+            .mtm-graph-container {
+                display: block !important;
+                .mtm-analysis-form-select{
+                    width: 25vw !important;
+                }
+            }
+        }
+        .mtm-ananltsis-section {
+            display: flex;
+            // align-items: center;
+            .mtm-ananltsis-form-group {
+                padding: 8px 8px 0 8px;
+                @media screen and (max-width: 768px) {
+                    padding: 8px 0 0 8px;
+                }
+                .mtm-analysis-form-select {
+                    margin-right: 0.5rem;
+                    width: 8vw;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    @media screen and (max-width: 768px) {
+                        width: 19vw;
+                    }
+                }
+            }
+        }
+        .inotification-ballicon {
+            position: absolute;
+            top: 1.3rem;
+            right: 1rem;
+        }
+    }
+}

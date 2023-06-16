@@ -1,0 +1,82 @@
+.draggable-parity1 {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+.draggable-parity {
+    padding-right: 1rem;
+    @media screen and (max-width: 768px) {
+        // position: absolute;
+        // top: 3.5rem;
+        // width: 4rem;
+        // flex-direction: column;
+        padding-right: 0rem;
+    }
+    .MuiSpeedDial-directionLeft {
+        width: 44rem;
+        @media screen and (max-width: 768px) {
+            width: 2rem;
+            flex-direction: column;
+        }
+        .MuiFab-root {
+            width: 10rem;
+            height: auto;
+            border-radius: 0.5rem;
+            padding: 5px;
+            @media screen and (max-width: 768px) {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+            }
+        }
+        .MuiFab-primary {
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+            cursor: move;
+        }
+        .MuiSpeedDial-actions {
+            @media screen and (max-width: 768px) {
+                padding-left: 0;
+                flex-direction: column;
+                position: absolute;
+                bottom: 4rem;
+                padding-right: 0;
+                margin: 0 auto;
+            }
+            .MuiSpeedDialAction-fab {
+                width: 33rem;
+                border-radius: 0.5rem;
+                // padding: 4px;
+                @media screen and (max-width: 768px) {
+                    width: 14rem;
+                    height: auto;
+                    padding: 1.5rem;
+                }
+            }
+        }
+        .MuiFab-label {
+            font-weight: bold;
+            .parity-details {
+                .partyle-item {
+                    @media screen and (max-width: 768px) {
+                        display: block;
+                    }
+                }
+            }
+            .parity-content {
+                padding-right: 8px;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                    padding-right: 0;
+                }
+            }
+            h6 {
+                display: none;
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    font-size: 0.5rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

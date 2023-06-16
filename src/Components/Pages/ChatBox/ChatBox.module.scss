@@ -1,0 +1,238 @@
+// @media screen and (max-width: 768px) {
+.chatPage {
+    margin-left: 1rem;
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+    .chatCard {
+        // height: 81vh;
+        // width: 98vw;
+        // overflow: overlay;
+        // display: flex;
+        // flex-wrap: wrap;
+        @media screen and (max-width: 768px) {
+            // margin: 0.4rem;
+            width: auto;
+        }
+        // .userCaption,
+        // .userChatImage,
+        // .userMessage,
+        // .queryBtnSection {
+        //     padding: 0;
+        // }
+        .searchField {
+            margin-bottom: 0.7rem;
+            position: relative;
+            padding: 0;
+            @media screen and (max-width: 768px) {
+                padding: 0 0.5rem;
+            }
+            .searchBox {
+                border-radius: 0.5rem;
+                border: 1px solid #67748e;
+                padding: 0.5rem;
+                width: 99.1%;
+                max-width: 99.1%;
+
+                background: transparent;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+            .searchIcon {
+                position: absolute;
+                top: 8px;
+                left: auto;
+                right: 5rem;
+                @media screen and (max-width: 768px) {
+                    right: 1rem;
+                }
+            }
+        }
+        .userSingleCard {
+            color: rgb(52, 71, 103);
+            border: 0px solid rgba(0, 0, 0, 0.125);
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 0.9rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            margin-right: 0.5rem;
+            max-width: 19.5%;
+            width: 20%;
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+                width: 96%;
+                margin: 0.4rem;
+                margin-bottom: 0.5rem;
+            }
+            .userChatImage {
+                img {
+                    text-align: center;
+                    display: flex;
+                    object-fit: cover;
+                    border-radius: 0.75rem;
+                    background: transparent;
+                    // box-shadow: rgb(0 0 0 / 12%) 0rem 0.3125rem 0.625rem 0rem;
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .userMessage {
+                .userChatContent {
+                    font-size: 1rem;
+                    opacity: 1;
+
+                    font-weight: bold;
+                    margin-top: 11px;
+                    text-transform: capitalize;
+                    margin-bottom: 0;
+                }
+            }
+            .tokenSection {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.7rem 0 0.8rem 0;
+
+                .userToken {
+                    // align-items: center;
+                    font-size: 0.9rem;
+                    margin-bottom: 0;
+                    word-break: break-all;
+                    max-width: 76%;
+                    font-weight: bold;
+                    color: #00a1ff;
+                }
+                .timeStamp {
+                    font-size: 0.9rem;
+                    line-height: 1.25;
+                    letter-spacing: 0.03333em;
+                    opacity: 1;
+                    font-weight: bold;
+                    color: rgba(0, 0, 0, 0.7);
+                    span {
+                        line-height: 1;
+                        vertical-align: text-top;
+                        padding-right: 5px;
+                    }
+                }
+            }
+            .userCaption {
+                .userCaptionContent {
+                    font-size: 0.9rem;
+                }
+            }
+            .queryBtnSection {
+                .queryBtn {
+                    border: none;
+                    text-transform: uppercase;
+                    width: 100%;
+                    padding: 7px 0;
+                    border-radius: 0.5rem;
+                    box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem,
+                        rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+                    // color: #001f2e;
+                    color: #fff;
+                    // background: linear-gradient(310deg, rgb(247 5 5 / 47%), rgb(255 193 7 / 46%));
+                    background: linear-gradient(310deg, rgb(247, 5, 5), rgb(255, 193, 7));
+                    font-weight: bold;
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+    .userAddBtn {
+        .addIcon {
+            position: fixed;
+            right: 1%;
+            bottom: 4%;
+            border: none;
+            font-size: 3rem;
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+            min-width: 4rem;
+            min-height: 4rem;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem,
+                rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+            line-height: 0;
+            color: #fff;
+            @media screen and (max-width: 768px) {
+                right: 4%;
+                bottom: 12%;
+            }
+        }
+    }
+}
+.chatForm {
+    padding: 1rem;
+
+    .labelIcon {
+        // vertical-align: text-bottom;
+        padding-right: 0.25rem;
+        color: rgb(52 71 103 / 72%);
+    }
+    .mendatory {
+        color: #f00;
+        padding-left: 0.1rem;
+    }
+    .chatSubmitbtn {
+        background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+        width: 100%;
+        padding: 8px;
+        border-radius: 0.5rem;
+        box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem,
+            rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+        border: none;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+    }
+    .imageSection {
+        // position: relative;
+        .setImage {
+            transition: all 200ms ease-in-out 0s;
+            position: relative;
+            img {
+                text-align: center;
+                object-fit: cover;
+                border-radius: 0.75rem;
+                background: transparent;
+                font-weight: 700;
+                box-shadow: rgb(0 0 0 / 12%) 0rem 0.3125rem 0.625rem 0rem;
+                width: 100%;
+                height: 17rem;
+                @media screen and (max-width: 768px) {
+                    height: 10rem;
+                }
+            }
+            .cameraIcon {
+                position: absolute;
+                right: 0;
+                right: 0;
+                bottom: 0;
+                top: auto;
+                min-width: 2rem;
+                min-height: 2rem;
+                border-radius: 0.5rem;
+                display: grid;
+                background: rgb(233, 236, 239);
+                box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem,
+                    rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+                cursor: pointer;
+                place-items: center;
+                font-size: 1.3rem;
+                color: rgba(0, 0, 0, 0.7);
+                @media screen and (max-width: 768px) {
+                    top: 8.9rem;
+                }
+            }
+        }
+    }
+}
+// }

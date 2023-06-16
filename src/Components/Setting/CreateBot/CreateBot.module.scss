@@ -1,0 +1,96 @@
+.createBotSection {
+    line-height: 1.25;
+    opacity: 1;
+    background: transparent;
+    // padding: 0 1rem;
+    .createBotContent {
+        padding: 1.5rem 1rem 0rem 1rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .createBotBtn {
+            background: linear-gradient(310deg, rgb(33, 82, 255), rgb(33, 212, 253));
+            border: none;
+            border-radius: 0.5rem;
+            box-shadow: rgb(20 20 20 / 12%) 0rem 0.25rem 0.375rem -0.0625rem,
+                rgb(20 20 20 / 7%) 0rem 0.125rem 0.25rem -0.0625rem;
+            cursor: pointer;
+            padding: 5px 7px;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+
+    .createBotDataSection {
+        overflow: scroll;
+        overflow-y: hidden;
+        .createBotValueSection {
+            display: inline-flex;
+            width: auto;
+            .createBotValue {
+                @media screen and (max-width: 768px) {
+                    width: 24vw !important;
+                }
+                .blinkCircle,
+                .blinkCircle1 {
+                    padding: 0 4px;
+                    line-height: 0;
+                    font-size: 8px;
+                }
+                .blinkCircle1 {
+                    background: red;
+                }
+                .blinkCircle {
+                    background: green;
+                }
+            }
+        }
+        .createBotDataLable {
+            width: auto;
+            
+            .createBotHead {
+                padding: 1px 16.34px;
+                white-space: unset;
+                
+            }
+        }
+    }
+}
+.botDataSection {
+    color: rgb(52, 71, 103);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    display: flex;
+    flex-direction: column;
+    min-width: 0px;
+    border-radius: 1rem;
+    margin-bottom: 0.7rem;
+    .createBotFormSection {
+        .formGroup {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .formSelect {
+                width: 80%;
+                @media screen and (max-width: 768px) {
+                    width: 65%;
+                }
+            }
+        }
+        .botCondition {
+            display: flex;
+            justify-content: space-between;
+        }
+        .ownBotApi {
+            position: relative;
+
+            .botApiNoticeIcon {
+                position: absolute;
+                bottom: 0.1rem;
+                left: 14rem;
+            }
+        }
+    }
+}
+.noticeHead {
+    text-align: center;
+}

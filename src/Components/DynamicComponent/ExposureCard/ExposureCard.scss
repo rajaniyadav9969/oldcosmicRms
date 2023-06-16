@@ -1,0 +1,52 @@
+.exposureCard {
+    // margin: 0.1rem 0;
+    // background-color: rgb(255, 255, 255);
+    // background-clip: border-box;
+    // border: 0px solid rgba(0, 0, 0, 0.125);
+    // color: rgb(103, 116, 142);
+    // border-radius: 1rem;
+    // box-shadow: rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+    // padding: 0;
+    // margin-right: 0.7rem;
+    // // max-width: 55vw;
+    // width: 47vw;
+    // @media screen and (max-width: 768px) {
+    //     width: auto;
+    //     margin-right: 0;
+    // }
+   
+    .exposureHeadingSection {
+        padding: 1rem 1rem 0.5rem 1rem;
+        .exposureMainHeading {
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+    }
+    #exposuredata {
+        .ReactTable {
+            // height: 12.1rem;
+            height: 15.3rem;
+            @media screen and (max-width: 768px) {
+                height: auto;
+            }
+        }
+    }
+    .tableDivSection {
+        margin-right: 0;
+    }
+}
+.exposureCardSection{
+    // margin: 0.1rem 0;
+    margin-right: 0.7rem;
+    width: 22vw;
+    @media screen and (max-width: 768px) {
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 1.3rem;
+    }
+}
+.full-exposure-card{
+    max-width: 100%;
+    margin-right: 0.6rem;
+	width: 100vw;
+}
